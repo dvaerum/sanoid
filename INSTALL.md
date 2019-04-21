@@ -128,6 +128,8 @@ sudo systemctl daemon-reload
 # Enable and start the Sanoid timer
 sudo systemctl enable sanoid.timer
 sudo systemctl start sanoid.timer
+# If you want sanoid-prune.service to be started along side sanoid.service by sanoid.timer you have to enable sanoid-prune.service
+sudo systemctl enable sanoid-prune.service
 ```
 
 Now, proceed to configure [**Sanoid**](#configuration)
